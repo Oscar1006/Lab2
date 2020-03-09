@@ -1,0 +1,52 @@
+Capitan: Morgan
+
+barco: El Pirata
+
+Solo se puede transportar 28k kg de carga por viaje
+
+5 compañias 
+    se les cobra por kilo y por tipo de carga
+
+    cada cliente
+        nombre
+        numero de registro mercantil
+        fecha de expedicion del registro
+        tipo de cliente (normal, plata, oro, platinum)
+        cantidad de kilos tranportados
+        valor total pagado
+
+cada vieje puede tener carga de varios clientes
+
+    cada carga
+        numero de cajas a transportar
+        peso (en gramos) por caja (todas las cajas pesan lo mismo)
+        el cliente a quien pertenece 
+        tipo de carga (peligrosa, perecedera, no perecedera)
+
+        kilo de carga peligrosa = $ 390.000
+        kilo de carga perecedera = $ 250.000
+        kilo de carga no perecedera = $ 80.000
+
+condiciones
+    no se puede transportar en un mismo viaje una carga PERECEDERA con PELIGROSA 
+    carga no mayor a 28k kg por viaje
+    se debe transportar la totalidad de la carga de los clientes
+    debe tener minimo dos cargas o el peso total es mayor a 12k kg
+
+la app debe
+    cargar el barco e informar a la empresa el valor total a pagar por el transporte de la carga
+    descargar el barco para iniciar un nuevo viaje
+    dar el peso total del la caga que transporta el barco
+    mostrar si es posible que el barco zarpe o no
+
+    actualizar la categoria de los clientes
+        nivel minimo de inicio el normal 
+        para subir a plata se debe haber transportado un total de 35k kg
+        para subir a oro 55k kg
+        para subir a platinum debe haber pagado $5 millones de pesos
+
+descuentos
+    plata: 1,5 % ( para carga perecedera )
+    oro: 3 % ( para carga perecedera o no perecedera )
+    platinum: 5% para ( todo tipo de carga )
+    
