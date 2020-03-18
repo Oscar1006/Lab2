@@ -12,12 +12,17 @@ public class Client {
     public static final double TO_GOLD = 55000;
     public static final int TO_PLATINUM = 5000000;
 
+    public static final double SILVER_DISCOUNT = 0.985;
+    public static final double GOLD_DISCOUNT = 0.97;
+    public static final double PLATINUM_DISCOUNT = 0.95;
+
     // Atributes
     private String name;
     private int tradeId;
     private String type;
     private double kgTransported;
     private int totalPaid;
+    private double discount;
 
     // Relationship
     private Date expeditionDate;
@@ -29,6 +34,7 @@ public class Client {
         this.type = NORMAL;
         this.kgTransported = 0;
         this.totalPaid = 0;
+        this.discount = 0;
         this.expeditionDate = date;
     }
 
@@ -52,6 +58,10 @@ public class Client {
         return totalPaid;
     }
 
+    public double getDiscount() {
+        return discount;
+    }
+
     public Date getExpeditionDate() {
         return expeditionDate;
     }
@@ -72,12 +82,21 @@ public class Client {
         totalPaid = paid;
     }
 
-    public void updateCategory(){
-        if(kgTransported > TO_SILVER)
+    public void updateCategory() {
+        if (kgTransported > TO_SILVER)
             type = SILVER;
-        else if(kgTransported > TO_GOLD)
+        else if (kgTransported > TO_GOLD)
             type = GOLD;
-        else if(totalPaid > TO_PLATINUM)
+        else if (totalPaid > TO_PLATINUM)
             type = PLATINUM;
+    }
+
+    public void updateDiscount() {
+        if (type.equals(SILVER))
+            discount = SILVER_DISCOUNT;
+        else if (type.equals(GOLD))
+            discount = GOLD_DISCOUNT;
+        else if (type.equals(PLATINUM))
+            discount = PLATINUM_DISCOUNT;
     }
 }
