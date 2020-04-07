@@ -3,18 +3,18 @@ package src.model;
 public class Client {
 
     // Constants
-    public static final String NORMAL = "Normal";
-    public static final String SILVER = "Silver";
-    public static final String GOLD = "Gold";
-    public static final String PLATINUM = "Platinum";
+    private static final String NORMAL = "Normal";
+    private static final String SILVER = "Silver";
+    private static final String GOLD = "Gold";
+    private static final String PLATINUM = "Platinum";
 
-    public static final double TO_SILVER = 35000;
-    public static final double TO_GOLD = 55000;
-    public static final int TO_PLATINUM = 5000000;
+    private static final double TO_SILVER = 35000;
+    private static final double TO_GOLD = 55000;
+    private static final int TO_PLATINUM = 5000000;
 
-    public static final double SILVER_DISCOUNT = 0.985;
-    public static final double GOLD_DISCOUNT = 0.97;
-    public static final double PLATINUM_DISCOUNT = 0.95;
+    private static final double SILVER_DISCOUNT = 0.985;
+    private static final double GOLD_DISCOUNT = 0.97;
+    private static final double PLATINUM_DISCOUNT = 0.95;
 
     // Atributes
     private String name;

@@ -3,13 +3,13 @@ package src.model;
 public class Load {
 
     // Constants
-    public static final String DANGEROUS = "Dangerous";
-    public static final String PERISHABLE = "Perishable";
-    public static final String NONPERISHABLE = "Nonperishable";
+    private static final String DANGEROUS = "Dangerous";
+    private static final String PERISHABLE = "Perishable";
+    private static final String NONPERISHABLE = "Nonperishable";
 
-    public static final int KG_DANGEROUS_PRICE = 390000;
-    public static final int KG_PERISHABLE = 250000;
-    public static final int KG_NONPERISHABLE = 80000;
+    private static final int KG_DANGEROUS_PRICE = 390000;
+    private static final int KG_PERISHABLE = 250000;
+    private static final int KG_NONPERISHABLE = 80000;
 
     // Atributes
     private int boxesNum;
