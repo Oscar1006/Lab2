@@ -17,14 +17,14 @@ public class Load {
     private String type;
 
     // Relationship
-    private Client client;
+    private Client owner;
 
     // Methods
     public Load(int boxes, int weight, String type, Client client) {
         boxesNum = boxes;
         weightG = weight;
         this.type = type;
-        this.client = client;
+        owner = client;
     }
 
     public int getBoxesNum() {
@@ -39,8 +39,8 @@ public class Load {
         return type;
     }
 
-    public Client getClient() {
-        return client;
+    public Client getOwner() {
+        return owner;
     }
 
     public void setBoxesNum(int boxes) {
@@ -55,8 +55,8 @@ public class Load {
         this.type = type;
     }
 
-    public void setClient(Client newClient) {
-        client = newClient;
+    public void setOwner(Client newClient) {
+        owner = newClient;
     }
 
 }
