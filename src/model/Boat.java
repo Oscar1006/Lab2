@@ -44,7 +44,6 @@ public class Boat {
         return searched;
     }
 
-
     public String uploadBoat(ArrayList<Load> loads) {
         String message = "Boat uploaded";
         this.loads = loads;
@@ -57,14 +56,22 @@ public class Boat {
         return message;
     }
 
-    public String informValue() {
-        return "Valor total";
-
+    public int informValue() {
+        int value = 0;
+        
+        for (int i = 0; i < loads.size(); i++){
+            value += loads.get(i).loadPrice();
+        }
+        return value;
     }
 
     public int totalWeight() {
-        //Peso total de la embarcacion
-        return 0;
+        int w = 0;
+
+        for (int i = 0; i < loads.size(); i++){
+            w += loads.get(i).loadWeight();
+        }
+        return w;
     }
 
     public boolean posibilityToSetSail() {
@@ -103,7 +110,17 @@ public class Boat {
     }
 
     public String updateCategory() {
-        return "Muestra la categoria de un cliente";
+
+        String categories = "";
+
+        categories = "\n  Categories \n\n" 
+        + company1.getName() + ": " + company1.getType() + "\n"
+        + company2.getName() + ": " + company2.getType() + "\n"
+        + company3.getName() + ": " + company3.getType() + "\n"
+        + company4.getName() + ": " + company4.getType() + "\n"
+        + company5.getName() + ": " + company5.getType(); 
+
+        return categories;
     }
 
 }

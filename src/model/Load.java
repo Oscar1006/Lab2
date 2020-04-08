@@ -59,4 +59,28 @@ public class Load {
         owner = newClient;
     }
 
+    public int loadWeight(){
+        int w = 0;
+
+        w = boxesNum * weightG;
+
+        return w;
+    }
+
+    public int loadPrice() {
+        int price = 0;
+        
+        if (type.equals(DANGEROUS)){
+            price = KG_DANGEROUS_PRICE * loadWeight();
+        }
+        else if (type.equals(PERISHABLE)){
+            price = KG_PERISHABLE * loadWeight();
+        }
+        else if (type.equals(NONPERISHABLE)){
+            price = KG_NONPERISHABLE * loadWeight();
+        }
+        
+        return price;
+    } 
+
 }

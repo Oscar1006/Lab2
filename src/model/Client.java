@@ -82,7 +82,7 @@ public class Client {
         totalPaid = paid;
     }
 
-    public void updateCategory() {
+    public void updateType() {
         if (kgTransported > TO_SILVER)
             type = SILVER;
         else if (kgTransported > TO_GOLD)

@@ -35,6 +35,7 @@ condiciones
     
     se debe transportar la totalidad de la carga
         de los clientes
+        
     debe tener minimo dos cargas o el peso total es mayor a 12k kg
 
 la app debe
