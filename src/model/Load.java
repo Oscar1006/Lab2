@@ -67,8 +67,9 @@ public class Load {
         return w;
     }
 
-    public int loadPrice() {
-        int price = 0;
+    public  double loadPrice() {
+        double price = 0;
+        double discount = owner.getDiscount();
         
         if (type.equals(DANGEROUS)){
             price = KG_DANGEROUS_PRICE * loadWeight();
@@ -79,6 +80,7 @@ public class Load {
         else if (type.equals(NONPERISHABLE)){
             price = KG_NONPERISHABLE * loadWeight();
         }
+        price = price * discount;
         
         return price;
     } 

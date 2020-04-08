@@ -2,18 +2,20 @@ Capitan: Morgan
 
 barco: El Pirata
 
-Solo se puede transportar 28k kg de carga por viaje
+Solo se puede transportar 28k kg de carga por viaje  +++
 
 5 compañias 
-    se les cobra por kilo y por tipo de carga
+    se les cobra por kilo y por tipo de carga       +++
 
-    cada cliente
+    cada cliente  {
         nombre
         numero de registro mercantil
         fecha de expedicion del registro
         tipo de cliente (normal, plata, oro, platinum)
         cantidad de kilos tranportados
         valor total pagado
+    }
+        
 
 cada viaje puede tener carga de varios clientes
 
@@ -34,8 +36,8 @@ condiciones
     carga no mayor a 28k kg por viaje
     
     se debe transportar la totalidad de la carga
-        de los clientes
-        
+        de los clientes  XXXXX
+
     debe tener minimo dos cargas o el peso total es mayor a 12k kg
 
 la app debe
