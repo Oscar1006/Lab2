@@ -25,17 +25,17 @@ public class Client {
     private double discount;
 
     // Relationship
-    private Date expeditionDate;
+    private TheDate expeditionDate;
 
     // Methods
-    public Client(String name, int id, Date date) {
+    public Client(String name, int id, TheDate date) {
         this.name = name;
         this.tradeId = id;
         this.type = NORMAL;
         this.kgTransported = 0;
         this.totalPaid = 0;
         this.discount = 0;
-        this.expeditionDate = date;
+        expeditionDate = date;
     }
 
     public String getName() {
@@ -62,7 +62,7 @@ public class Client {
         return discount;
     }
 
-    public Date getExpeditionDate() {
+    public TheDate getExpeditionDate() {
         return expeditionDate;
     }
 

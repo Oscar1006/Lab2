@@ -1,6 +1,6 @@
 package src.model;
 
-public class Date {
+public class TheDate {
 
     // Atributes
     private int month;
@@ -8,7 +8,7 @@ public class Date {
     private int year;
 
     // Methods
-    public Date(int month, int day, int year) {
+    public TheDate(int month, int day, int year) {
         this.month = month;
         this.day = day;
         this.year = year;
